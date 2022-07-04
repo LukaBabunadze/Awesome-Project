@@ -11,6 +11,7 @@ const RecommendedItem = ({imgUrl, name}) => {
         <Pressable style={s.container} onPress={() => navigation.navigate("Details", {title: name, description: descText, imgUrl: imgUrl})}>
             <Image style={s.imageStyle} source={{uri: `${imgUrl}`}}/>
             <Text style={s.name}>{name}</Text>
+            <Text>...</Text>
         </Pressable>
     );
 };
